@@ -76,7 +76,7 @@ function pipe(a, ...args)
  let sum = a; 
  for (let i = 0; i < args.length; i++) 
  {
-  sum=args[i]; 
+  sum=args[i](sum); 
  }
  return sum; 
 } 
